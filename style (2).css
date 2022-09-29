@@ -5,7 +5,9 @@
     list-style: none;
     font-family: 'Roboto', sans-serif;
 }
-
+main{
+    size:100px;
+}
 .resume-contents {
     min-height: 100vh;
     width: 80%;
@@ -17,11 +19,11 @@
 .left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #040535;
+    background-color: #999999;
 }
 
 .right-section {
-    grid-column: span 6;
+    grid-column: span 5;
     height: 100%;
     background-color: #424a50;
     border-radius: 0px 60px 0px 0px;
@@ -100,4 +102,39 @@
 .about-me-contents {
     font-size: 18px;
     color: #eeeeee;
+}
+
+.experience-contents,
+.education-contents,
+.awards-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+    color: #F1F8FD;
+}
+
+.exp-company-name,
+.education-school-name,
+.awards-company-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.exp-time-period,
+.educationp-time-period,
+.awards-time-period {
+    font-size: 18px;
+}
+
+.exp-position,
+.education-subject,
+.awards-name {
+    font-size: 25px;
+}
+
+.exp-desc,
+.education-desc,
+.awards-desc {
+    font-size: 16px;
+    padding-left: 5px;
 }
